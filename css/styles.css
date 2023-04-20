@@ -8,6 +8,17 @@
   --hover-color: #404bbf;
   --main-bacground-color: #ffffff;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1158px;
+}
 .link {
   text-decoration: none;
 }
@@ -59,10 +70,12 @@ body {
   color: var(--title-color);
   text-decoration: none;
 }
+.contacts-list {
+  margin-bottom: 0px;
+}
 .nav-list .link:hover,
 .nav-list .link:focus {
   color: var(--hover-color);
-  text-decoration: underline;
 }
 
 /* Addresses */
@@ -86,17 +99,24 @@ body {
 /* Hero section */
 .hero {
   background: #2e2f42;
+  height: 600px;
+  text-align: center;
+  margin: 0;
+  padding-top: 188px;
 }
 .hero-title {
-  font-weight: 800;
   font-family: var(--main-text);
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  width: 496px;
+  margin-bottom: 48px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button {
   background: #4d5ae5;
@@ -115,6 +135,16 @@ body {
   background: var(--hover-color);
 }
 /* Features */
+.futures {
+  margin-top: 120px;
+}
+.features-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.features-item {
+  width: 264px;
+}
 .subject-features {
   font-weight: 800;
   font-family: var(--main-text);
@@ -124,6 +154,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 .text-features {
   font-weight: 800;
@@ -134,10 +166,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 /* What are we doing */
+.whatwedo-section {
+  margin-top: 120px;
+}
 .title {
-  font-weight: 800;
   font-family: var(--main-text);
   font-style: normal;
   font-weight: 700;
@@ -147,16 +183,26 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 /* Team section */
 .team-section {
   background: #f4f4fd;
+  margin-top: 120px;
+  padding-top: 120px;
+}
+.team-list {
+  margin-bottom: 0px;
 }
 .team-member {
   background: var(--main-bacground-color);
+  width: 264px;
+  height: 380px;
 }
 .name-text {
-  font-weight: 800;
   font-family: var(--main-text);
   font-style: normal;
   font-weight: 500;
@@ -165,9 +211,10 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 .position-text {
-  font-weight: 800;
   font-family: var(--main-text);
   font-style: normal;
   font-weight: 400;
@@ -176,10 +223,20 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin: 0px;
+}
+.card-content {
+  margin: 32px 16px;
 }
 /* Footer */
 .footer {
   background: var(--title-color);
+  height: 312px;
+  padding: 100px 1020px 100px 156px;
+}
+.footer-content {
+  width: 264px;
+  height: 112px;
 }
 .footer-logo-link {
   text-decoration: none;
@@ -212,6 +269,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-bottom: 0px;
 }
 
 /* Portfolio page */
