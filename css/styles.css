@@ -276,6 +276,9 @@ body {
 /* Header is the same as at the main page */
 /* Filters section */
 /* buttons menu */
+.filers-section {
+  margin-top: 120px;
+}
 .filter-button {
   background: var(--button-bacground-collor);
   font-family: "Roboto", sans-serif;
@@ -298,7 +301,17 @@ body {
   text-decoration: none;
   list-style: none;
 }
-
+.portfolio-list {
+  margin-top: 72px;
+  margin-bottom: 0px;
+}
+.portfolio-card {
+  width: 360px;
+  height: 420px;
+}
+.portfolio-card-content {
+  margin: 32px 0px 32px 0px;
+}
 .main-text {
   font-family: var(--main-text);
   font-style: normal;
@@ -308,6 +321,8 @@ body {
   color: var(--title-color);
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 .type {
   font-family: var(--main-text);
@@ -317,5 +332,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin: 0;
 }
 /* Portfolio Footer */
