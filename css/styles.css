@@ -16,6 +16,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+img {
+  display: block;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -134,9 +137,9 @@ body {
 .hero {
   background: #2e2f42;
   height: 600px;
-  text-align: center;
   margin: 0;
   padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-family: var(--main-text);
@@ -162,11 +165,16 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
   margin: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button:hover,
 .button:focus {
@@ -175,6 +183,7 @@ body {
 /* Features */
 .futures {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .features-list {
   margin-top: 0px;
@@ -214,7 +223,6 @@ body {
 }
 /* What are we doing */
 .whatwedo-section {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .business-list {
@@ -293,6 +301,7 @@ body {
   background: var(--title-color);
   height: 312px;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo-link {
@@ -305,6 +314,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-second-logoword {
   font-family: "Raleway", sans-serif;
@@ -325,7 +337,7 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-bottom: 0px;
-  margin-top: 16px;
+  margin-top: 0px;
   width: 264px;
 }
 
@@ -334,12 +346,15 @@ body {
 /* Filters section */
 /* buttons menu */
 .filers-section {
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .button-list {
   display: flex;
   padding-left: 0;
   justify-content: center;
+  margin-bottom: 72px;
+  margin-top: 0;
 }
 .button-list .item:not(:last-child) {
   margin-right: 24px;
@@ -365,6 +380,7 @@ body {
 .filter-button:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 /* Portfolio-links-section */
 .portfolio-list .link {
@@ -372,11 +388,11 @@ body {
   list-style: none;
 }
 .portfolio-list {
-  margin-top: 72px;
   margin-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  margin-top: 0;
 }
 .portfolio-card {
   width: 360px;
@@ -390,7 +406,9 @@ body {
   margin-bottom: 0px;
 }
 .portfolio-card-content {
-  margin: 32px 0px 32px 0px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .main-text {
